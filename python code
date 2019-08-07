@@ -1,0 +1,10 @@
+pip3 install newspaper3k
+from newspaper import Article
+article=Article('https://www.aljazeera.com/news/2019/08/india-revokes-kashmir-special-status-latest-updates-190806134011673.html')
+article.download()
+article.parse()
+article.nlp()
+article.authors
+article.publish_date
+article.keywords
+print(article.summary)
